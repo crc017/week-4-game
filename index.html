@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    
+    body {
+      background-image: url("assets/images/burgerBuilding.jpg");
+      background-repeat: repeat-x;
+      background-color: #b3ffff;
+    }
+    
+
+    .navbar {
+      background-color: #ffff66;
+      border-color: #993333;
+      border-width: 8px;
+      text-align: center;
+      margin: auto;
+      align-content: center;
+    }
+
+    #bbHeader {
+      color: #993333;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 400px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    .characterSelected {
+      color: black;
+      font-size: 80px;
+    }
+
+    .characters {
+      margin-bottom: 20px;
+    }
+
+   .battleGround {
+    font-size: 20px;
+   }
+
+   #charDisplay {
+    font-size: 20px;
+   }
+
+
+    h1 {
+    margin: auto;
+    }
+
+
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div>
+      <h1 id="bbHeader">BOB'S BURGERS - RPG</h1>
+    </div>
+</nav>
+  
+<div class="container-fluid text-center" style="height:300px">    
+  <div class="row content">
+    <div class="col-sm-12 text-center"> 
+      <h1>Welcome</h1>
+      <p>Choose your Character:</p>
+      <br>
+      <h3>Character Select:<h3>
+      <br>
+      <h1 class="characterSelected"></h1>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+      <div id="charDisplay">
+          <img class="characters" id="Bob" src="assets/images/bob.gif" height="100">
+          <img class="characters" id="Louise" src="assets/images/louise.gif" height="100">
+          <img class="characters" id="Tina" src="assets/images/tina.gif" height="100">
+          <img class="characters" id="Gene" src="assets/images/gene.gif" height="100">
+          <img class="characters" id="Linda" src="assets/images/linda.gif" height="100">
+
+      </div>
+  <div class = "battleGround">
+      <div class="col-sm-4">
+              <div id="Calvin">
+                <img id="Calvin" class="enemies" src="assets/images/calvin.jpg" height="100">
+              </div>
+      </div>
+      <div class="col-sm-4">
+              <div id="Jimmy">
+                <img id="Jimmy" class="enemies" src="assets/images/jimmy.png" height="100">
+              </div>
+      </div>
+
+      <div class="col-sm-4">
+              <div id="Tammy">
+                <img id="Tammy" class="enemies" src="assets/images/tammy.jpg" height="100">
+              </div>
+      </div>
+  </div>
+    </div>
+</div>
+
+
+
+
+<script src="assets/javascript/game.js"></script>
+
+
+</body>
+
+
+
+
+</html>
